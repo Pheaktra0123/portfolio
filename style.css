@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Kantumruy Pro', 'Roboto Condensed', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
@@ -46,7 +46,8 @@ body {
     padding: 0 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .logo, .footer-logo {
+    font-family: 'Dangrek', 'Nokora', 'Playwrite HR Lijeva', 'Roboto Condensed', Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 15px;
@@ -224,10 +225,12 @@ nav ul li a:hover::after {
 
 /* Header Actions */
 .header-actions {
+     font-family: 'Kantumruy Pro', 'Roboto Condensed', Arial, sans-serif;
     display: flex;
     align-items: center;
     gap: 15px;
     margin-right: 20px;
+    text-align: center;
 }
 
 #darkModeToggle {
@@ -245,13 +248,38 @@ nav ul li a:hover::after {
 }
 
 #langSwitcher {
-    padding: 5px 10px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
+      font-family: 'Kantumruy Pro', 'Roboto Condensed', Arial, sans-serif;
+    text-align: center;
+    padding: 7px 14px;
     font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    min-width: 90px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.04);
 }
 
+#langSwitcher:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.15);
+}
+
+body.dark-mode #langSwitcher {
+    background: var(--light-color);
+    color: var(--text-color);
+    border: 1px solid #444;
+    box-shadow: 0 2px 8px rgba(142, 202, 230, 0.08);
+}
+#langSwitcher option {
+    text-align: center;
+}
 /* Hero Section */
 .hero {
     position: relative;
@@ -337,22 +365,26 @@ nav ul li a:hover::after {
 .hero-image {
     flex: 1;
     position: relative;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-image .image-wrapper {
     position: relative;
     width: 400px;
-    height: 400px;
+    height: 550px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
     animation: float 6s ease-in-out infinite;
+    
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 @keyframes float {
@@ -874,11 +906,11 @@ body.dark-mode {
     --primary-color: #8ecae6;
     --secondary-color: #023047;
     --accent-color: #ffb703;
-    --light-color: #22223b;
+    --light-color: #232946;      /* Lighter for cards/forms */
     --dark-color: #16161a;
-    --text-color: #f8f9fa;
-    --text-light: #bfc0c0;
-    --white: #232946;
+    --text-color: #f4f4f4;       /* Slightly less bright */
+    --text-light: #bfc0c0;       /* Softer for secondary text */
+    --white: #2a2d3a;            /* Lighter for card/form backgrounds */
     --black: #fff;
     background: var(--dark-color);
     color: var(--text-color);
@@ -891,8 +923,17 @@ body.dark-mode .project-card {
     background: var(--light-color);
     color: var(--text-color);
 }
-
-body.dark-mode nav ul,
+body.dark-mode header.scrolled {
+    background-color: rgba(34, 34, 34, 0.95);
+}
+body.dark-mode nav ul li a {
+    color: var(--text-color);
+}
+body.dark-mode .section-title,
+body.dark-mode .contact-content,
+body.dark-mode .contact-info p ul li {
+    color: var(--text-light) 
+}
 body.dark-mode .footer-links a,
 body.dark-mode .footer-social a {
     background: var(--light-color);

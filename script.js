@@ -192,7 +192,12 @@ document.addEventListener('DOMContentLoaded', function() {
             mySkills: "My Skills",
             getInTouch: "Get In Touch",
             downloadResume: "Download Resume",
-            sendMessage: "Send Message"
+            sendMessage: "Send Message",
+            hello: "Hello!",
+            yourEmail: "Your Email",
+            yourName: "Your Name",
+            yourMessage: "Your Message",
+
         },
         km: {
             home: "ទំព័រដើម",
@@ -206,29 +211,60 @@ document.addEventListener('DOMContentLoaded', function() {
             mySkills: "ជំនាញរបស់ខ្ញុំ",
             getInTouch: "ទាក់ទងមកខ្ញុំ",
             downloadResume: "ទាញយកប្រវត្តិរូប",
-            sendMessage: "ផ្ញើសារ"
+            sendMessage: "ផ្ញើសារ",
+            hello: "សួស្តី!",
+            yourEmail: "អ៊ីមែលរបស់អ្នក",
+            yourName: "ឈ្មោះរបស់អ្នក",
+            yourMessage: "សាររបស់អ្នក",
+
         }
     };
 
     function setLanguage(lang) {
-        document.querySelectorAll('nav ul li a')[0].textContent = translations[lang].home;
-        document.querySelectorAll('nav ul li a')[1].textContent = translations[lang].about;
-        document.querySelectorAll('nav ul li a')[2].textContent = translations[lang].work;
-        document.querySelectorAll('nav ul li a')[3].textContent = translations[lang].skills;
-        document.querySelectorAll('nav ul li a')[4].textContent = translations[lang].contact;
-        document.querySelector('.subtitle').textContent = translations[lang].subtitle;
-        document.querySelector('.about .section-title').textContent = translations[lang].aboutMe;
-        document.querySelector('.work .section-title').textContent = translations[lang].myWork;
-        document.querySelector('.skills .section-title').textContent = translations[lang].mySkills;
-        document.querySelector('.contact .section-title').textContent = translations[lang].getInTouch;
-        document.querySelector('.about-text .btn-primary').textContent = translations[lang].downloadResume;
-        document.querySelector('.contact-form .btn-primary').textContent = translations[lang].sendMessage;
+        // Navigation
+        const navLinks = document.querySelectorAll('nav ul li a');
+        if (navLinks.length >= 5) {
+            navLinks[0].textContent = translations[lang].home;
+            navLinks[1].textContent = translations[lang].about;
+            navLinks[2].textContent = translations[lang].work;
+            navLinks[3].textContent = translations[lang].skills;
+            navLinks[4].textContent = translations[lang].contact;
+        }
+
+        // Hero subtitle
+        const subtitle = document.querySelector('.subtitle');
+        if (subtitle) subtitle.textContent = translations[lang].subtitle;
+
+        // Section titles
+        const aboutTitle = document.querySelector('.about .section-title');
+        if (aboutTitle) aboutTitle.textContent = translations[lang].aboutMe;
+
+        const workTitle = document.querySelector('.work .section-title');
+        if (workTitle) workTitle.textContent = translations[lang].myWork;
+
+        const skillsTitle = document.querySelector('.skills .section-title');
+        if (skillsTitle) skillsTitle.textContent = translations[lang].mySkills;
+
+        const contactTitle = document.querySelector('.contact .section-title');
+        if (contactTitle) contactTitle.textContent = translations[lang].getInTouch;
+
+        // About Resume Button
+        const aboutBtn = document.querySelector('.about-text .btn-primary');
+        if (aboutBtn) aboutBtn.textContent = translations[lang].downloadResume;
+
+        // Contact Form Button
+        const contactBtn = document.querySelector('.contact-form .btn-primary');
+        if (contactBtn) contactBtn.textContent = translations[lang].sendMessage;
+
         // Footer links
-        document.querySelectorAll('.footer-links a')[0].textContent = translations[lang].home;
-        document.querySelectorAll('.footer-links a')[1].textContent = translations[lang].about;
-        document.querySelectorAll('.footer-links a')[2].textContent = translations[lang].work;
-        document.querySelectorAll('.footer-links a')[3].textContent = translations[lang].skills;
-        document.querySelectorAll('.footer-links a')[4].textContent = translations[lang].contact;
+        const footerLinks = document.querySelectorAll('.footer-links a');
+        if (footerLinks.length >= 5) {
+            footerLinks[0].textContent = translations[lang].home;
+            footerLinks[1].textContent = translations[lang].about;
+            footerLinks[2].textContent = translations[lang].work;
+            footerLinks[3].textContent = translations[lang].skills;
+            footerLinks[4].textContent = translations[lang].contact;
+        }
     }
 
     langSwitcher.addEventListener('change', function() {
