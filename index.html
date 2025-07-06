@@ -1,321 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chheang Pheaktra | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nokora:wght@100;300;400;700;900&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Loading Animation -->
     <div class="loader">
-        <div class="loader-inner">
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-        </div>
+      <div class="loader-inner">
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+      </div>
     </div>
 
     <header>
-        <div class="container">
-            <div class="logo">CHHEANG PHEAKTRA</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-            <div class="header-actions">
-                <button id="darkModeToggle" title="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <select id="langSwitcher" title="Change Language">
-                    <option value="en">EN</option>
-                    <option value="km">ខ្មែរ</option>
-                </select>
-            </div>
+      <div class="container">
+        <div class="logo">CHHEANG PHEAKTRA</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <button id="darkModeToggle" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <select id="langSwitcher" title="Change Language">
+            <option value="en">EN</option>
+            <option value="km">ខ្មែរ</option>
+          </select>
         </div>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section with Gradient Background -->
-        <section id="home" class="hero">
-            <div class="hero-bg-gradient"></div>
-            <div class="container">
-                <div class="hero-content animate__animated animate__fadeInLeft">
-                    <h1>Hi, I'm <span>CHHEANG PHEAKTRA</span></h1>
-                    <p class="subtitle">Your Profession/Tagline</p>
-                    <div class="hero-btns">
-                        <a href="#work" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image animate__animated animate__fadeInRight">
-                    <div class="image-wrapper">
-                        <img src="profile-image.jpg" alt="Your Name">
-                    </div>
-                </div>
+      <!-- Hero Section with Gradient Background -->
+      <section id="home" class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+          <div class="hero-content animate__animated animate__fadeInLeft">
+            <h1>Hi, I'm <span>CHHEANG PHEAKTRA</span></h1>
+            <p class="subtitle">Your Profession/Tagline</p>
+            <div class="hero-btns">
+              <a href="#work" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
-        </section>
+          </div>
+          <div class="hero-image animate__animated animate__fadeInRight">
+            <div class="image-wrapper">
+              <img src="profile-image.jpg" alt="Your Name" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Section with Animated Progress Bars -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title animate__animated">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text animate__animated">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        
-                        <div class="progress-bars">
-                            <div class="progress-item">
-                                <div class="progress-info">
-                                    <span>Web Design</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="90%"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-info">
-                                    <span>UI/UX</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-info">
-                                    <span>Development</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-primary">Download Resume</a>
-                    </div>
-                    <div class="about-image animate__animated">
-                        <div class="floating-img">
-                            <img src="about-image.jpg" alt="About Me">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- About Section with Animated Progress Bars -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title animate__animated">About Me</h2>
+          <div class="about-content">
+            <div class="about-text animate__animated">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
 
-        <!-- Work Section with Sliding Project Cards -->
-        <section id="work" class="work">
-            <div class="work-bg-gradient"></div>
-            <div class="container">
-                <h2 class="section-title animate__animated">My Work</h2>
-                <div class="projects-slider">
-                    <div class="slider-controls">
-                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="projects-track">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <img src="project1.jpg" alt="Project 1">
-                                <div class="project-links">
-                                    <a href="#"><i class="fas fa-link"></i></a>
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Project Title 1</h3>
-                                <p>Brief description of the project and your role in it.</p>
-                                <div class="project-tags">
-                                    <span>Web Design</span>
-                                    <span>UI/UX</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-img">
-                                <img src="project2.jpg" alt="Project 2">
-                                <div class="project-links">
-                                    <a href="#"><i class="fas fa-link"></i></a>
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Project Title 2</h3>
-                                <p>Brief description of the project and your role in it.</p>
-                                <div class="project-tags">
-                                    <span>Development</span>
-                                    <span>React</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-img">
-                                <img src="project3.jpg" alt="Project 3">
-                                <div class="project-links">
-                                    <a href="#"><i class="fas fa-link"></i></a>
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Project Title 3</h3>
-                                <p>Brief description of the project and your role in it.</p>
-                                <div class="project-tags">
-                                    <span>Branding</span>
-                                    <span>Logo</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-img">
-                                <img src="project4.jpg" alt="Project 4">
-                                <div class="project-links">
-                                    <a href="#"><i class="fas fa-link"></i></a>
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>Project Title 4</h3>
-                                <p>Brief description of the project and your role in it.</p>
-                                <div class="project-tags">
-                                    <span>Mobile App</span>
-                                    <span>iOS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="progress-bars">
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>Web Design</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="90%"></div>
+                  </div>
                 </div>
-            </div>
-        </section>
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>UI/UX</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="85%"></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>Development</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="75%"></div>
+                  </div>
+                </div>
+              </div>
 
-        <!-- Skills Section with Animated Icons -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title animate__animated">My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <h3>HTML5</h3>
-                        <p>Semantic markup, accessibility, modern standards</p>
-                    </div>
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <h3>CSS3</h3>
-                        <p>Flexbox, Grid, animations, responsive design</p>
-                    </div>
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <h3>JavaScript</h3>
-                        <p>ES6+, DOM manipulation, async programming</p>
-                    </div>
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <h3>React</h3>
-                        <p>Components, hooks, context API, Redux</p>
-                    </div>
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Responsive</h3>
-                        <p>Mobile-first approach, media queries</p>
-                    </div>
-                    <div class="skill-item animate__animated">
-                        <div class="skill-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>UI/UX</h3>
-                        <p>User-centered design, prototyping</p>
-                    </div>
-                </div>
+              <a href="#" class="btn btn-primary">Download Resume</a>
             </div>
-        </section>
+            <div class="about-image animate__animated">
+              <div class="floating-img">
+                <img src="about-image.jpg" alt="About Me" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section with Floating Elements -->
-        <section id="contact" class="contact">
-            <div class="contact-bg-gradient"></div>
-            <div class="container">
-                <h2 class="section-title animate__animated">Get In Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info animate__animated">
-                        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-                        <ul class="contact-links">
-                            <li><i class="fas fa-envelope"></i> your.email@example.com</li>
-                            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Your City, Country</li>
-                        </ul>
-                        <div class="social-links">
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                    <form class="contact-form animate__animated">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+      <!-- Work Section with Sliding Project Cards -->
+      <section id="work" class="work">
+        <div class="work-bg-gradient"></div>
+        <div class="container">
+          <h2 class="section-title animate__animated">My Work</h2>
+          <div class="projects-slider">
+            <div class="slider-controls">
+              <button class="slider-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="slider-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
-        </section>
+            <div class="projects-track">
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="project1.jpg" alt="Project 1" />
+                  <div class="project-links">
+                    <a href="#"><i class="fas fa-link"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Project Title 1</h3>
+                  <p>Brief description of the project and your role in it.</p>
+                  <div class="project-tags">
+                    <span>Web Design</span>
+                    <span>UI/UX</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="project2.jpg" alt="Project 2" />
+                  <div class="project-links">
+                    <a href="#"><i class="fas fa-link"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Project Title 2</h3>
+                  <p>Brief description of the project and your role in it.</p>
+                  <div class="project-tags">
+                    <span>Development</span>
+                    <span>React</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="project3.jpg" alt="Project 3" />
+                  <div class="project-links">
+                    <a href="#"><i class="fas fa-link"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Project Title 3</h3>
+                  <p>Brief description of the project and your role in it.</p>
+                  <div class="project-tags">
+                    <span>Branding</span>
+                    <span>Logo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-img">
+                  <img src="project4.jpg" alt="Project 4" />
+                  <div class="project-links">
+                    <a href="#"><i class="fas fa-link"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>Project Title 4</h3>
+                  <p>Brief description of the project and your role in it.</p>
+                  <div class="project-tags">
+                    <span>Mobile App</span>
+                    <span>iOS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section with Animated Icons -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title animate__animated">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>HTML5</h3>
+              <p>Semantic markup, accessibility, modern standards</p>
+            </div>
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h3>CSS3</h3>
+              <p>Flexbox, Grid, animations, responsive design</p>
+            </div>
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>ES6+, DOM manipulation, async programming</p>
+            </div>
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>React</h3>
+              <p>Components, hooks, context API, Redux</p>
+            </div>
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive</h3>
+              <p>Mobile-first approach, media queries</p>
+            </div>
+            <div class="skill-item animate__animated">
+              <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>UI/UX</h3>
+              <p>User-centered design, prototyping</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section with Floating Elements -->
+      <section id="contact" class="contact">
+        <div class="contact-bg-gradient"></div>
+        <div class="container">
+          <h2 class="section-title animate__animated">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info animate__animated">
+              <p>
+                Feel free to reach out for collaborations or just a friendly
+                hello!
+              </p>
+              <ul class="contact-links">
+                <li><i class="fas fa-envelope"></i> your.email@example.com</li>
+                <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> Your City, Country
+                </li>
+              </ul>
+              <div class="social-links">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+              </div>
+            </div>
+            <form class="contact-form animate__animated">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">YourName</div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#work">Work</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </div>
-            <p class="copyright">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">YourName</div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
         </div>
+        <p class="copyright">
+          &copy; <span id="year"></span> Your Name. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
     <a href="#home" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </a>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
